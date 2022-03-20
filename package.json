@@ -16,7 +16,7 @@
   "scripts": {
     "server": "ts-node  --project ./tsconfig.server.json ./server/index.ts",
     "build-server": "cross-env BABEL_ENV='production' webpack --env production --config ./scripts/webpack.server.config.js",
-    "start": "node dist/server/index.js",
+    "start": "PORT=8080 node dist/server/index.js",
     "test": "jest"
   },
   "dependencies": {
